@@ -12,7 +12,7 @@ import {
   type DocumentLocation,
 } from "sanity/presentation";
 import { structureTool } from "sanity/structure";
-import { media, mediaAssetSource } from "sanity-plugin-media";
+import { media} from "sanity-plugin-media";
 
 import {
   apiVersion,
@@ -20,7 +20,7 @@ import {
   projectId,
   studioUrl,
 } from "./src/sanity/lib/api";
-import { pageStructure, singletonPlugin } from "./src/sanity/plugins/settings";
+import { singletonPlugin } from "./src/sanity/plugins/settings";
 
 import { settings } from "./src/sanity/schemas/singletons/settings";
 
