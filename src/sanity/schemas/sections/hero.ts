@@ -18,10 +18,6 @@ export const hero = defineType({
       type: "string",
     }),
     defineField({
-      name: "link",
-      type: "string",
-    }),
-    defineField({
       type: "image",
       name: "image",
       title: "Image",

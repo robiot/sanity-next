@@ -11,8 +11,6 @@ export interface Section<T> {
   index: number;
   isFirst: boolean;
   isLast: boolean;
-  previous?: SectionData;
-  next?: SectionData;
   dataAttribute?: CreateDataAttribute<{
     baseUrl: string;
     id: string;

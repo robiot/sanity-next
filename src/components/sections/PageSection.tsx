@@ -13,8 +13,6 @@ function PageSection({
   index,
   isFirst,
   isLast,
-  next,
-  previous,
   data,
   dataAttribute,
   page,

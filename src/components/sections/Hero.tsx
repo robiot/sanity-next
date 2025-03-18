@@ -1,8 +1,6 @@
 import type { Section } from "@/types/Section";
 
 import { cn } from "@/lib/utils";
-import { Button } from "../ui/button";
-import Link from "next/link";
 import { type Hero } from "@/types/sanity.types";
 import { PinIcon } from "@sanity/icons";
 
@@ -26,11 +24,6 @@ function Hero({ data }: Section<Hero>) {
           <p className="text-lg text-gray-600 mb-8 max-w-md">
             {data.subheading}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="md:w-auto">
-              <Link href={data.link ?? "#"}>Visa produkter</Link>
-            </Button>
-          </div>
         </div>
         <div className="flex justify-center items-center">
           <div className="relative w-full max-w-md">

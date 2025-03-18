@@ -1,6 +1,5 @@
 import { draftMode } from "next/headers";
 import { createDataAttribute } from "next-sanity";
-import { PagePayload } from "@/types/Page";
 import { PageSection } from "../sections/PageSection";
 import { Hero } from "../sections/Hero";
 import { type Page } from "@/types/sanity.types";
@@ -41,14 +40,11 @@ export async function Page({
               ...section,
               _type: type,
             },
-            isFirst: index === 0,
-            isLast: sections.length === index + 1,
-            previous: index !== 0 ? sections[index - 1] : undefined,
-            next:
-              index !== sections.length - 1 ? sections[index + 1] : undefined,
+            isFirst: index == 0,
+            isLast: sections.length == index + 1,
             dataAttribute: (await draftMode()).isEnabled
               ? createDataAttribute({
-                  baseUrl: "/", // todo
+                  baseUrl: "/",
                   id: data._id,
                   type: data._type,
                   path: ["sections", index],
